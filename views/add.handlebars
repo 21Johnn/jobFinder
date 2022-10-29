@@ -1,0 +1,37 @@
+<div id="add-form-container" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Cadastre a vaga preenchendo o formulário</h1>
+            </div>
+            <div id="form-box" class="com-md-12">
+                <h2>Preencha o formulário, de forma que a vaga fique bem descrita</h2>
+                <form action="/jobs/add" method="POST">
+                    <div class="form-group">
+                        <label for="title">Título da vaga</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="digite o titulo da vaga" required>
+                        <small id="titlehelp" class="form-text text-muted">O título é importante para que os candidatos encontrem a vaga, seja claro e objetivo</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descrição da vaga</label>
+                        <textarea type="text" class="form-control" id="description" name="description" required placeholder="Descreva a vaga, requisitos, e beneficios"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Empresa Contratante</label>
+                        <input type="text" class="form-control" id="company" name="company" required placeholder="digite o nome da empresa">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email para contato</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="digite o email para receber as candidaturas">
+                        <small id="titlehelp" class="form-text text-muted">O título é importante para que os candidatos encontrem a vaga, seja claro e objetivo</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="salary">Salario oferecido</label>
+                        <input type="text" class="form-control" id="salary" name="salary" required placeholder="digite o valor do salario R$">
+                    </div>
+                    <input type="hidden" name="new_job" value="1">
+                    <button type="submit" class="btn btn-primary">Cadastrar a vaga</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
